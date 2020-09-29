@@ -25,6 +25,8 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "no-use-before-define": "off",
     "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
   },
   settings: {
     "import/parsers": {
