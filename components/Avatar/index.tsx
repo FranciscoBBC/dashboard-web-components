@@ -1,10 +1,10 @@
 import React from 'react'
+import AvatarModel from "../../models/avatarModel"
+import {AvatarHolder} from "./styled" 
 
-const Avatar = ({label}) => {
+const Avatar = ({image, size,  onClick}:AvatarModel) => {
     return (
-        <div>
-            {label}
-        </div>
+        <AvatarHolder src={image} size={size} onClick={()=>onClick()} /> 
     )
 }
 

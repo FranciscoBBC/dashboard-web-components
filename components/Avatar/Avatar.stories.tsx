@@ -1,17 +1,20 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import Avatar from "../Avatar";
+import AvatarModel from "../../models/avatarModel"
+
 
 export default {
     title: 'Example/Avatar',
     component: Avatar,
   };
 
-const Template = (args) => <Avatar {...args} />;
+const Template: Story<AvatarModel> = (args) => <Avatar {...args} />
 
 export const Primary = Template.bind({});
 Primary.args = {
-    primary: true,
-    label: "default"
+    image: "https://api.adorable.io/avatars/40/abott@adorable.png",
+    size: "50px",
+    onClick: ()=>console.log("oi"),
 }
 
